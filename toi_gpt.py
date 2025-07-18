@@ -73,8 +73,9 @@ llm_chain = LLMChain(prompt=template, llm=llm)
 # chain = LLMChain(llm=llm, prompt=PromptTemplate(template=prompt_template, input_variables=["user_query"]))
 
 st.title("Times of India GPT")
+st.markdown("You may want to watch the video before using the tool")
 st.video("https://youtu.be/TSD2R9mntfg")
-st.markdown(("You can ask questions for any news item from 1st of June 2025 to 12th of July 2025")
+st.markdown("You can ask questions for any news item from 1st of June 2025 to 12th of July 2025")
 
 
 # Show a preview of the dataset
