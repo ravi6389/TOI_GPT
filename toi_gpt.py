@@ -78,9 +78,7 @@ st.video("https://youtu.be/TSD2R9mntfg")
 st.markdown("You can ask questions for any news item from 1st of June 2025 to 12th of July 2025")
 
 
-# Show a preview of the dataset
-st.write("Here is a preview of your dataset:")
-st.dataframe(df.head())
+
 
 user_query = st.text_input("Enter your query", "News about India")
 
