@@ -78,7 +78,7 @@ st.write("You can ask questions for any news item from 1st of June 2025 to 12th 
 st.write("Here is a preview of your dataset:")
 st.dataframe(df.head())
 
-user_query = st.text_input("Enter your query", "Give me the news about India")
+user_query = st.text_input("Enter your query", "News about India")
 
 if user_query :
 # Query LangChain to generate Python code based on user query
@@ -86,7 +86,7 @@ if user_query :
 
 # Display the generated Python code
 st.write("Generated Python script to answer the query:")
-st.code(python_script, language="python")
+# st.code(python_script, language="python")
 
 # Dynamically execute the Python script using exec()
 try:
