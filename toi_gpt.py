@@ -12,6 +12,7 @@ import openai
 if 'df' not in st.session_state:
     df =pd.read_excel('Summary2.xlsx')
     df['Date'] = pd.to_datetime(df['Date'])
+    df = df.drop(columns='Link')
     st.session_state['df'] = df.copy(deep = True)
     
 
