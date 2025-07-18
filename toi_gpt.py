@@ -50,8 +50,8 @@ Please write a Python script that can answer the query.
 # st.azure_endpoint = 'https://learn-mcboa439-eastus2.cognitiveservices.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2025-01-01-preview'
                
 llm = AzureChatOpenAI(
-api_key = st.secrets,
-                azure_endpoint = st.azure_endpoint,
+api_key = st.secrets['api_key'],
+                azure_endpoint = st.secrets['azure_endpoint'],
                 model = "gpt-4o",
                 api_version="2024-02-15-preview",
                 temperature = 0.
